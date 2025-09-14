@@ -1,0 +1,63 @@
+#
+# Dunst Configuration - Tokyo Night Theme
+#
+
+[global]
+    ### Display & Geometry ###
+    monitor = 1
+    width = 350
+    height = (0, 300)
+    origin = top-right
+    offset = (30, 50)
+    scale = 0
+    notification_limit = 5
+
+    ### Styling ###
+    font = "JetBrainsMono Nerd Font 10"
+    alignment = left
+    format = "<b>%s</b>\n%b"
+    
+    # The frame will use the main Tokyo Night blue accent
+    frame_width = 2
+    frame_color = "#7aa2f7" # Tokyo Blue
+
+    separator_color = frame
+    padding = 12
+    horizontal_padding = 12
+
+    ### Behavior ###
+    markup = full
+    show_age_threshold = 60
+    icon_position = left
+    max_icon_size = 64
+    sort = yes
+    stack_duplicates = true
+    hide_duplicate_count = true
+
+    ### Shortcuts (compatible placement) ###
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+    context = ctrl+shift+period
+
+
+### Urgency Sections (Tokyo Night Colors) ###
+
+# Low urgency: Standard notifications, music changes, etc.
+[urgency_low]
+    background = "#1a1b26" # Tokyo Storm (Darkest)
+    foreground = "#c0caf5" # Tokyo Foreground
+    timeout = 10
+
+# Normal urgency: New messages, emails, etc.
+[urgency_normal]
+    background = "#24283b" # Tokyo Night (Main BG)
+    foreground = "#7aa2f7" # Tokyo Blue
+    timeout = 20
+
+# Critical urgency: Low battery, errors, etc.
+[urgency_critical]
+    background = "#f7768e" # Tokyo Red
+    foreground = "#1a1b26" # Use dark BG for contrast
+    frame_color = "#ff9e64"  # Tokyo Orange
+    timeout = 0
