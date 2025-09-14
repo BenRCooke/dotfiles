@@ -1,0 +1,41 @@
+# Cava configuration for the Tokyo Night color scheme
+# With stereo, horizontally centered output and auto-sizing bars
+
+[general]
+# Set bars to 0 to automatically fill the terminal width.
+bars = 0
+
+framerate = 60
+autosens = 1
+
+# If bars are not tall enough, try increasing this value to 120 or 150.
+sensitivity = 100
+
+[output]
+# 'noncurses' is required for the 'horizontal' orientation to work.
+method = noncurses
+
+# Set orientation to 'horizontal' to make bars grow up and down from the center.
+orientation = horizontal
+
+# 'stereo' places low frequencies in the middle and mirrors the rest.
+channels = stereo
+
+bar_character = '█'
+bar_width = 4
+bar_spacing = 2
+
+[color]
+# The background line is commented out to use your terminal's default background.
+; background = 'transparent'
+
+# Enable the gradient feature.
+gradient = 1
+
+# Define the colors for the gradient.
+gradient_color_1 = '#7aa2f7'
+gradient_color_2 = '#73daca'
+gradient_color_3 = '#bb9af7'
+
+[smoothing]
+noise_reduction = 77
