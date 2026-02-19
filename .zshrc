@@ -121,3 +121,7 @@ export VISUAL='nvim'
 export EDITOR="$VISUAL"
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+
+#Upload dotfiles to github
+alias dotsave='git -C ~/dotfiles add . && git -C ~/dotfiles commit -m "update: $(date +%Y-%m-%d)" && git -C ~/dotfiles push'
