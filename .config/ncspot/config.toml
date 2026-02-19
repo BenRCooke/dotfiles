@@ -17,5 +17,4 @@ cmdline_bg = "#24283b"
 search_match = "#f7768e"
 
 [notification]
-on_song_change = "notify-send 'Now playing' '{artist} - {title}'"
-
+#on_song_change = "~/.config/ncspot/notify.sh '{title}' '{artist}'"

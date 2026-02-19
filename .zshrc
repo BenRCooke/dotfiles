@@ -104,6 +104,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+alias ls='exa -ll'
+alias cat='bat'
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -116,3 +119,5 @@ fastfetch
 
 export VISUAL='nvim'
 export EDITOR="$VISUAL"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit

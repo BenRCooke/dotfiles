@@ -61,3 +61,4 @@
     foreground = "#1a1b26" # Use dark BG for contrast
     frame_color = "#ff9e64"  # Tokyo Orange
     timeout = 0
+
